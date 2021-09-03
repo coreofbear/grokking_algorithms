@@ -3,6 +3,6 @@
 
 #include <stdint.h>
 
-size_t bin_search(const uint32_t * const ptr_data, const size_t len, const uint32_t num);
+int32_t bin_search(const uint32_t * const ptr_data, const size_t len, const uint32_t num, size_t * const ptr_idx);
 
 #endif // _ALGORITHMS_BOX_H_
