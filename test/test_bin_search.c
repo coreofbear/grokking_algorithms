@@ -22,11 +22,6 @@ void test_bin_search_pos(void)
     err = bin_search(nums, sizeof(nums) / sizeof(uint32_t), 999999, &idx);
     TEST_ASSERT_EQUAL(0, err);
     TEST_ASSERT_EQUAL(16, idx);
-
-    uint32_t test_nums[3] = {0, 1, 2};
-    err = bin_search(test_nums, sizeof(test_nums) / sizeof(uint32_t), 2, &idx);
-    TEST_ASSERT_EQUAL(0, err);
-    TEST_ASSERT_EQUAL(2, idx);
 }
 
 void test_bin_search_neg(void)

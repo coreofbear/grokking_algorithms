@@ -1,4 +1,4 @@
-#include "algorithms_box.h"
+#include "cs_box.h"
 
 /**
  * @brief       Binary search
