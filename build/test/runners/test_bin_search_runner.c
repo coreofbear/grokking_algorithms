@@ -82,8 +82,8 @@ static void run_test(UnityTestFunction func, const char* name, UNITY_LINE_TYPE l
 int main(void)
 {
   UnityBegin("test_bin_search.c");
-  run_test(test_bin_search_pos, "test_bin_search_pos", 11);
-  run_test(test_bin_search_neg, "test_bin_search_neg", 32);
+  run_test(test_bin_search_pos, "test_bin_search_pos", 12);
+  run_test(test_bin_search_neg, "test_bin_search_neg", 28);
 
   return UnityEnd();
 }

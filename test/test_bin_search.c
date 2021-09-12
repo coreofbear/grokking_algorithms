@@ -4,7 +4,7 @@
 #include <stddef.h>
 #include <string.h>
 
-#include "algorithms_box.h"
+#include "cs_box.h"
 
 uint32_t nums[17] = {
     0, 2, 3, 5, 8, 9, 10, 15, 17, 23, 34, 45, 2345, 4000, 12333, 34555, 999999};
@@ -12,9 +12,9 @@ uint32_t nums[17] = {
 void test_bin_search_pos(void)
 {
     size_t  idx;
-    int32_t err = bin_search(nums, sizeof(nums) / sizeof(uint32_t), 2345, &idx);
+    int32_t err = bin_search(nums, sizeof(nums) / sizeof(uint32_t), 4000, &idx);
     TEST_ASSERT_EQUAL(0, err);
-    TEST_ASSERT_EQUAL(12, idx);
+    TEST_ASSERT_EQUAL(13, idx);
 
     err = bin_search(nums, sizeof(nums) / sizeof(uint32_t), 0, &idx);
     TEST_ASSERT_EQUAL(0, err);
